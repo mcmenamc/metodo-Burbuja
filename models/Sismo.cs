@@ -12,5 +12,9 @@ namespace MetododoBurbuja.models
         public string descripcion { get; set; }
         public string simbolo { get; set; }
 
+        public string print()
+        {
+            return "Id: " + this.sat_unimed +" Descripción " + this.descripcion + " Simbolo " + this.simbolo;
+        }
     }
 }
