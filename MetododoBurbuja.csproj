@@ -84,6 +84,7 @@
     <Content Include="Documents\datos.xml" />
     <Content Include="images\burbuja.png" />
     <Content Include="images\burbuja2.png" />
+    <Content Include="images\loader.gif" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -32,9 +32,12 @@ namespace MetododoBurbuja
       
         private void Form1_Load(object sender, EventArgs e)
         {
-            string path = Path.GetFullPath("..\\..\\images\\burbuja2.png");
-            pictureBox1.ImageLocation = path;
+            string path = Path.GetFullPath("..\\..\\images\\");
+            pictureBox1.ImageLocation = path + "burbuja2.png";
+            pictureBox2.ImageLocation = path + "loader.gif";
+            pictureBox2.Visible = false;
         }
+        
         private void button5_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null;
@@ -89,6 +92,11 @@ namespace MetododoBurbuja
 
         private void Advanced_BubbleString()
         {
+            if (pictureBox2.InvokeRequired)
+                pictureBox2.Invoke(new MethodInvoker(delegate
+                {
+                    pictureBox2.Visible = true;
+                }));
             Sismo[] arreglo = ListString.ToArray();
 
             bool flag = true;
@@ -111,20 +119,30 @@ namespace MetododoBurbuja
                 {
                     dataGridView3.DataSource = arreglo;
                 }));
+            if (pictureBox2.InvokeRequired)
+                pictureBox2.Invoke(new MethodInvoker(delegate
+                {
+                    pictureBox2.Visible = false;
+                }));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            dataGridView2.DataSource = null;
+            dataGridView3.DataSource = null;
             if (ListString.Count < 1)
             {
                 MessageBox.Show("No hay elementos en la lista", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+           
             thread = new Thread(new ThreadStart(OrdenaString));
             thread2 = new Thread(new ThreadStart(Advanced_BubbleString));
             thread2.Start();
             thread.Start();
+            
         }
+
 
         //private void RegularBubble()
         //{
