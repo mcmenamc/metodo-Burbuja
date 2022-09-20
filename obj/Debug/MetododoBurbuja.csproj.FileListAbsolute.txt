@@ -1,0 +1,11 @@
+C:\Users\mcmen\source\repos\MetododoBurbuja\bin\Debug\MetododoBurbuja.exe.config
+C:\Users\mcmen\source\repos\MetododoBurbuja\bin\Debug\MetododoBurbuja.exe
+C:\Users\mcmen\source\repos\MetododoBurbuja\bin\Debug\MetododoBurbuja.pdb
+C:\Users\mcmen\source\repos\MetododoBurbuja\obj\Debug\MetododoBurbuja.csproj.AssemblyReference.cache
+C:\Users\mcmen\source\repos\MetododoBurbuja\obj\Debug\MetododoBurbuja.csproj.SuggestedBindingRedirects.cache
+C:\Users\mcmen\source\repos\MetododoBurbuja\obj\Debug\MetododoBurbuja.Form1.resources
+C:\Users\mcmen\source\repos\MetododoBurbuja\obj\Debug\MetododoBurbuja.Properties.Resources.resources
+C:\Users\mcmen\source\repos\MetododoBurbuja\obj\Debug\MetododoBurbuja.csproj.GenerateResource.cache
+C:\Users\mcmen\source\repos\MetododoBurbuja\obj\Debug\MetododoBurbuja.csproj.CoreCompileInputs.cache
+C:\Users\mcmen\source\repos\MetododoBurbuja\obj\Debug\MetododoBurbuja.exe
+C:\Users\mcmen\source\repos\MetododoBurbuja\obj\Debug\MetododoBurbuja.pdb
